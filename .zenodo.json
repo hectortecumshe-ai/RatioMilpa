@@ -1,0 +1,50 @@
+{
+  "title": "Ratio Milpa: el conocimiento local del maíz en México como sistema complejo adaptativo",
+  "upload_type": "software",
+  "version": "0.1.0",
+  "license": "mit",
+  "language": "spa",
+  "creators": [
+    {
+      "name": "Mojica-Zárate, Héctor Tecumshé",
+      "orcid": "0000-0002-9067-3983"
+    },
+    {
+      "name": "Díaz-José, Óscar"
+    },
+    {
+      "name": "Barrera-Guzmán, Luis Ángel"
+    },
+    {
+      "name": "Velázquez-Vázquez, Guadalupe"
+    }
+  ],
+  "description": "Aplicación web libre, bilingüe (español/inglés) y de un solo archivo, de la línea Ratio Complexus, para un estudio nacional del conocimiento local del maíz en México. Cada localidad se documenta como un sistema complejo adaptativo en 13 bloques: el maíz que siembra (nativo con las 64 razas del catálogo de CONABIO, o mejorado o híbrido) y su sistema; región hasta la localidad (INEGI); requerimientos; manejo con un cuestionario base de 38 pasos y 85 actividades que la localidad responde (sí/no) y amplía con sus innovaciones; regeneración (ocho perillas 0–4); riesgos (19 amenazas, matriz de probabilidad × impacto, capacidad adaptativa); elementos; precio y valor; formulación; tablero de redes (centralidades, Louvain, correlaciones φ, cladograma del vecino más cercano); sostenibilidad (compartimentos, índice de Sarandón, 17 ODS, huella de carbono IPCC); prospectiva a 2, 5 y 10 años; e informe. Un bloque 14 · Atlas nacional junta, sin servidor, los archivos de muchas localidades: mapa, frecuencia de cada práctica a escala nacional y por región, maíces sembrados, innovaciones y red nacional del conocimiento. La aplicación arranca en blanco: el Stack publicado del maíz criollo de Calpan, Puebla (Díaz-José et al. 2026) sirve como cuestionario base y como ejemplo de consulta en una ventana aparte o en un modo ejemplo, nunca precargado. Las sugerencias de la app se distinguen de lo que llena el usuario, y el avance cuenta solo lo llenado. Motor de redes validado contra NetworkX y cladograma contra SciPy; agregación del atlas verificada. Vistas para productores y científicos.",
+  "keywords": [
+    "maíz",
+    "Zea mays",
+    "conocimiento local",
+    "razas de maíz",
+    "milpa",
+    "atlas nacional",
+    "sistemas complejos adaptativos",
+    "stack de conocimiento",
+    "análisis de redes",
+    "sostenibilidad",
+    "regeneración",
+    "riesgo",
+    "México"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.22231/asyd.v23i3.1822",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.23290103",
+      "relation": "isDerivedFrom",
+      "scheme": "doi"
+    }
+  ]
+}

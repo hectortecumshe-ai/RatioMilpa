@@ -148,8 +148,8 @@ def legal(guia, titulo_es, titulo_en):
   <p lang="es"><b>{titulo_es}</b> · {EDICION[0]}, {FECHA[0]} · describe Ratio Milpa {VERSION_APP}.</p>
   <p lang="en"><b>{titulo_en}</b> · {EDICION[1]}, {FECHA[1]} · covers Ratio Milpa {VERSION_APP}.</p>
   <p>{AUTORES}</p>
-  <p lang="es">Centro Académico Regional Sede Huatusco, Universidad Autónoma Chapingo (Héctor Tecumshé Mojica-Zárate, Óscar Díaz-José, Luis Ángel Barrera-Guzmán) · Benemérita Universidad Autónoma de Puebla (Guadalupe Velázquez-Vázquez), México. ORCID del autor de correspondencia: 0000-0002-9067-3983.</p>
-  <p lang="en">Huatusco Regional Academic Centre, Chapingo Autonomous University (Héctor Tecumshé Mojica-Zárate, Óscar Díaz-José, Luis Ángel Barrera-Guzmán) · Meritorious Autonomous University of Puebla (Guadalupe Velázquez-Vázquez), Mexico. Corresponding author ORCID: 0000-0002-9067-3983.</p>
+  <p lang="es">Centro Académico Regional Sede Huatusco, Universidad Autónoma Chapingo (Héctor Tecumshé Mojica-Zárate, Oscar Díaz-José), México. ORCID del autor de correspondencia: 0000-0002-9067-3983.</p>
+  <p lang="en">Huatusco Regional Academic Centre, Chapingo Autonomous University (Héctor Tecumshé Mojica-Zárate, Oscar Díaz-José), Mexico. Corresponding author ORCID: 0000-0002-9067-3983.</p>
   <p><span class="isbn" lang="es">{isbn_es}</span><span class="isbn" lang="en">{isbn_en}</span><br>
      <span lang="es">{doi_es} · DOI de la aplicación: <a href="https://doi.org/{DOI_APP}">{DOI_APP}</a></span><span lang="en">{doi_en} · DOI of the app: <a href="https://doi.org/{DOI_APP}">{DOI_APP}</a></span></p>
   <p lang="es">Texto y figuras bajo licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0); la aplicación, bajo licencia MIT. Puedes copiar, adaptar y compartir este instructivo citando a sus autores. Las capturas de pantalla son de la aplicación Ratio Milpa {VERSION_APP}. Composición tipográfica en Palatino Linotype.</p>

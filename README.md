@@ -48,7 +48,17 @@ La aplicación arranca en blanco. Para que nadie confunda un ejemplo con sus pro
 
 Ningún dato sale a un servidor. Frecuencia de una práctica = localidades que respondieron «sí» ÷ localidades que respondieron; lo no respondido no entra al denominador.
 
+## Instructivos
+
+| | Español | English |
+|---|---|---|
+| **Productor** · paso a paso, atlas nacional, guía de entrevista y hojas de campo | [web](https://hectortecumshe-ai.github.io/RatioMilpa/instructivo-productor.html) · [PDF](instructivo/RatioMilpa-Instructivo-Productor.pdf) | [web](https://hectortecumshe-ai.github.io/RatioMilpa/instructivo-productor.html?lang=en) · [PDF](instructivo/RatioMilpa-Producer-Guide.pdf) |
+| **Científico** · modelo, ecuaciones, agregación del atlas, validación y ejemplo resuelto | [web](https://hectortecumshe-ai.github.io/RatioMilpa/instructivo-cientifico.html) · [PDF](instructivo/RatioMilpa-Instructivo-Cientifico.pdf) | [web](https://hectortecumshe-ai.github.io/RatioMilpa/instructivo-cientifico.html?lang=en) · [PDF](instructivo/RatioMilpa-Scientist-Guide.pdf) |
+
+Texto bajo licencia CC BY 4.0.
+
 ## Rigor
+
 
 Cada cifra muestra su fuente. Lo que es agrupación o lectura de la app se marca como **«Lectura de Ratio Milpa»**. Lo que no está documentado aparece como **«sin dato»**: la aplicación no inventa valores.
 

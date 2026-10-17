@@ -6,8 +6,8 @@
 const CONFIG = {
   app:'Ratio Milpa', version:'0.1.0', anio:2026, doi:'',
   repo:'https://github.com/hectortecumshe-ai/RatioMilpa',
-  autores:'Héctor Tecumshé Mojica-Zárate · Óscar Díaz-José · Luis Ángel Barrera-Guzmán · Guadalupe Velázquez-Vázquez',
-  citaAutores:{es:'Mojica-Zárate, H. T., Díaz-José, O., Barrera-Guzmán, L. A., y Velázquez-Vázquez, G.',en:'Mojica-Zárate, H. T., Díaz-José, O., Barrera-Guzmán, L. A., & Velázquez-Vázquez, G.'},
+  autores:'Héctor Tecumshé Mojica-Zárate · Oscar Díaz-José',
+  citaAutores:{es:'Mojica-Zárate, H. T., y Díaz-José, O.',en:'Mojica-Zárate, H. T., & Díaz-José, O.'},
   titulo:{es:'El conocimiento local del maíz en México como sistema complejo adaptativo',en:'Local maize knowledge in Mexico as a complex adaptive system'}
 };
 let LANG = 'es', MODO = 'prod';

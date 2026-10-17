@@ -4,7 +4,7 @@
    Ratio Milpa — Ratio Complexus («lo que está tejido junto»)
    ===================================================================== */
 const CONFIG = {
-  app:'Ratio Milpa', version:'0.1.0', anio:2026, doi:'',
+  app:'Ratio Milpa', version:'0.1.0', anio:2026, doi:'10.5281/zenodo.23432656',
   repo:'https://github.com/hectortecumshe-ai/RatioMilpa',
   autores:'Héctor Tecumshé Mojica-Zárate · Oscar Díaz-José',
   citaAutores:{es:'Mojica-Zárate, H. T., y Díaz-José, O.',en:'Mojica-Zárate, H. T., & Díaz-José, O.'},

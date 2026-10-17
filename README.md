@@ -2,6 +2,8 @@
 
 # Ratio Milpa
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23432656.svg)](https://doi.org/10.5281/zenodo.23432656)
+
 👉 **https://hectortecumshe-ai.github.io/RatioMilpa/**
 
 **El conocimiento local del maíz en México como sistema complejo adaptativo.** Aplicación de **Ratio Complexus**, el ala de la suite [Ratio](https://hectortecumshe-ai.github.io/) dedicada a los sistemas complejos adaptativos: *lo que está tejido junto*. Hermana de [Ratio Telar](https://hectortecumshe-ai.github.io/RatioTelar/), pero hecha para un solo cultivo y para un **estudio nacional**: cada localidad se documenta con el mismo cuestionario y los resultados se juntan en un atlas.

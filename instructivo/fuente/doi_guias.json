@@ -2,11 +2,21 @@
  "productor": {
   "id": 23433189,
   "doi": "10.5281/zenodo.23433189",
-  "bucket": "https://zenodo.org/api/files/cc106110-b700-40ac-a3e6-f195349412aa"
+  "bucket": "https://zenodo.org/api/files/cc106110-b700-40ac-a3e6-f195349412aa",
+  "v2": {
+   "id": 23480888,
+   "doi": "10.5281/zenodo.23480888",
+   "bucket": "https://zenodo.org/api/files/e7a05fff-5273-446c-848e-0adb70f2df94"
+  }
  },
  "cientifico": {
   "id": 23433192,
   "doi": "10.5281/zenodo.23433192",
-  "bucket": "https://zenodo.org/api/files/b2eb7b85-0420-4c62-8b3a-8e74cc28ffa0"
+  "bucket": "https://zenodo.org/api/files/b2eb7b85-0420-4c62-8b3a-8e74cc28ffa0",
+  "v2": {
+   "id": 23480889,
+   "doi": "10.5281/zenodo.23480889",
+   "bucket": "https://zenodo.org/api/files/b4546e7e-0027-4665-beef-37a4d0a71040"
+  }
  }
 }

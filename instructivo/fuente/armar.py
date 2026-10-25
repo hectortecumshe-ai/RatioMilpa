@@ -7,11 +7,11 @@ import json, os, re, subprocess, sys
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.abspath(os.path.join(AQUI, '..', '..'))
 sys.path.insert(0, AQUI)
-VERSION_APP = '0.1.0'
-EDICION = ('1.ª edición, corregida', '1st edition, corrected')
+VERSION_APP = '0.2.0'
+EDICION = ('1.ª edición, actualizada', '1st edition, updated')
 FECHA = ('octubre de 2026', 'October 2026')
 DOI_APP = '10.5281/zenodo.23432656'
-DOI_GUIA = {'productor': '10.5281/zenodo.23488143', 'cientifico': '10.5281/zenodo.23488144'}        # ← DOI propio de cada instructivo cuando Zenodo lo asigne
+DOI_GUIA = {'productor': '10.5281/zenodo.23642443', 'cientifico': '10.5281/zenodo.23642444'}        # ← DOI propio de cada instructivo cuando Zenodo lo asigne
 ISBN = {'productor': ('', ''), 'cientifico': ('', '')}  # ← (ISBN impreso o PDF ES, ISBN PDF EN) cuando el INDAUTOR los asigne
 CITA_AUT = ('Mojica-Zárate, H. T., y Díaz-José, O.', 'Mojica-Zárate, H. T., &amp; Díaz-José, O.')
 AUTORES = 'Héctor Tecumshé Mojica-Zárate · Oscar Díaz-José'

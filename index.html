@@ -3028,7 +3028,7 @@ function modelo3D(cont, opt={}){
     const rot=(c,a)=>c.map(([x,y,z])=>[x*Math.cos(a)-y*Math.sin(a), x*Math.sin(a)+y*Math.cos(a), z]);   // fijas al sistema: giran con él
     retro[0].setAttribute('d',curva(rot(c0,-0.35))); retro[1].setAttribute('d',curva(rot(c1,-0.35)));
     const e0=proy(rot([[rr*1.12,0,60]],-0.35)[0]), e1=proy(rot([[-rr*1.08,0,125]],-0.35)[0]);
-    rotRetro[0].setAttribute('x',Math.min(W-300,Math.max(8,e0[0]+10))); rotRetro[0].setAttribute('y',e0[1]); rotRetro[1].setAttribute('x',Math.max(8,Math.min(W-280,e1[0]-260))); rotRetro[1].setAttribute('y',e1[1]-8);
+    const lr=(rotRetro[0].getComputedTextLength&&rotRetro[0].getComputedTextLength())||300; rotRetro[0].setAttribute('x',Math.min(W-lr-8,Math.max(8,e0[0]+10))); rotRetro[0].setAttribute('y',e0[1]); rotRetro[1].setAttribute('x',Math.max(8,Math.min(W-280,e1[0]-260))); rotRetro[1].setAttribute('y',e1[1]-8);
     // aristas: solo la fracción más fuerte; con un nodo en foco, solo las suyas
     const n=Math.max(1,Math.round(aristas.length*frac)), Q={}; nodos.forEach(d=>Q[d.id]=proy(P[d.id]));
     lA.forEach(({e,el},i)=>{ const a=Q[e.a], b=Q[e.b]; const ve=foco ? (e.a===foco||e.b===foco) : i<n;

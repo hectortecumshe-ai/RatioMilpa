@@ -4,7 +4,7 @@
    Ratio Milpa — Ratio Complexus («lo que está tejido junto»)
    ===================================================================== */
 const CONFIG = {
-  app:'Ratio Milpa', version:'0.2.0', anio:2026, doi:'10.5281/zenodo.23432656',
+  app:'Ratio Milpa', version:'0.3.0', anio:2026, doi:'10.5281/zenodo.23432656',
   repo:'https://github.com/hectortecumshe-ai/RatioMilpa',
   autores:'Héctor Tecumshé Mojica-Zárate · Oscar Díaz-José',
   citaAutores:{es:'Mojica-Zárate, H. T., y Díaz-José, O.',en:'Mojica-Zárate, H. T., & Díaz-José, O.'},
@@ -98,6 +98,12 @@ function estadoInicial(){ return {
   riesgo:{},                       // riesgo -> {p, i, c, off}
   prosp:null,                      // supuestos editados de la prospectiva (null = valores iniciales)
   reqInn:[],                       // [{t, b, d, fuente}]
+  pasoOrden:[],                    // orden de los pasos en el ciclo (claves n); vacío = orden publicado
+  pasoGrupo:{},                    // n paso -> B elegida por el usuario (si la cambió)
+  pasoNoAplica:{},                 // n paso -> true si no aplica en la localidad
+  pasosPropios:[],                 // pasos agregados por el usuario {n (≥ 101), es, en, b}
+  actPaso:{},                      // código de actividad publicada -> paso al que el usuario la movió
+  actOrden:{},                     // n paso -> orden de sus actividades (códigos publicados e 'i:<id>' de las agregadas)
   manejo:{},                       // n paso -> {resp:{codigo:'si'|'no'}, inn:[{t, el:[ids], imp:[5], nota}], imp:{codigo:[5]}}; sin respuesta no cuenta
   elemExtra:[],                    // elementos agregados por el usuario {id,cat,n}
   precio:{},                       // id -> {p:precio unitario, u:unidad, q:cantidad por ha}

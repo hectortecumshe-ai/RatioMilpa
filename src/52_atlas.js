@@ -1,6 +1,6 @@
 "use strict";
 /* =====================================================================
-   Bloque 14 · ATLAS NACIONAL DEL CONOCIMIENTO LOCAL DEL MAÍZ
+   Bloque 13 · ATLAS NACIONAL DEL CONOCIMIENTO LOCAL DEL MAÍZ
    ---------------------------------------------------------------------
    Sin servidor ni terceros: cada localidad guarda su proyecto (.milpa.json)
    y aquí se juntan muchos. De cada archivo se calcula un resumen con las
@@ -21,7 +21,7 @@ function atlasEscribir(L){ try{ localStorage.setItem(ATLAS_KEY, JSON.stringify(L
 function conEstado(est, ref, fn){ const prev=S, prevEJ=EJ; S=Object.assign(estadoInicial(), JSON.parse(JSON.stringify(est))); EJ=!!ref; try{ return fn(); } finally{ S=prev; EJ=prevEJ; } }
 function resumenProyecto(est, archivo, ref){ return conEstado(est, ref, ()=>{
   const acts=actividades(), l=locSel(), m=munSel(), ed=edoDe(S.edo)||EDO_VACIO;
-  const resp={}; PASOS.forEach(p=>{ const mm=manejoDe(p.n); p.a.forEach(a=>{ if(mm.resp[a[0]]) resp[a[0]]=mm.resp[a[0]]; }); });
+  const resp={}; pasosProyecto().forEach(p=>{ const mm=manejoDe(p.n); p.a.forEach(a=>{ if(p.noAplica) resp[a[0]]='no'; else if(mm.resp[a[0]]) resp[a[0]]=mm.resp[a[0]]; }); });
   const sos=acts.length?sostenibilidad():null, rg=regeneracion(), rs=riesgos({rg}), R=acts.length?construirRed(true):null;
   const nombres={}; if(R) R.nodos.forEach(d=>nombres[d.id]=[d.nombre, d.cat]);
   const r=Object.values(resp);
@@ -66,14 +66,14 @@ function mapaAtlas(L){ const W=MAPA_MX.w, H=MAPA_MX.h, cveDe=Object.fromEntries(
   return s+'</svg>'; }
 const celdaF = f=> f==null?`<td class="hc vacia">—</td>`:`<td class="hc" style="--f:${f.toFixed(3)}" title="${fmt(100*f,0)} %">${fmt(100*f,0)}</td>`;
 
-/* ---------------- Bloque 14 ---------------- */
+/* ---------------- Bloque 13 ---------------- */
 function renderAtlas(el){ const L=atlasLeer(), orden=renderAtlas.orden||'paso', ab=renderAtlas.ab||false;
   const P=L.length?practicasAtlas(L):[], RN=L.length?redNacional(L):null, stN=RN&&RN.R.nodos.length?estadisticaRed(RN.R):null, PR=porRegion(L);
   const razas={}; L.forEach(x=>{ const k=x.tipo==='nativo'?(x.raza||T('Nativo, raza sin especificar','Native, race not specified')):x.tipo==='mejorado'?T('Mejorado o híbrido','Improved or hybrid')+(x.vari?': '+x.vari:''):T('Tipo sin especificar','Type not specified'); razas[k]=(razas[k]||0)+1; });
   const estados=new Set(L.map(x=>x.edo).filter(Boolean)), regiones=new Set(L.map(x=>x.reg).filter(Boolean)), innov=L.flatMap(x=>x.inn.map(i=>({...i, loc:x.loc||x.nombre, edo:x.edoN})));
   const Pord=[...P].sort(orden==='mas'?(a,b)=>(b.f??-1)-(a.f??-1):orden==='menos'?(a,b)=>(a.f??2)-(b.f??2):(a,b)=>a.paso-b.paso||a.cod.localeCompare(b.cod)), Pver=ab?Pord:Pord.slice(0,25);
   el.innerHTML=`${cabecera('atlas',T('El atlas junta los archivos de muchas localidades para leer el conocimiento local del maíz a escala nacional: dónde se documentó, qué prácticas se conservan en cada región, qué maíces se siembran y cómo se teje la red nacional. Todo ocurre en este navegador; ningún dato sale a un servidor.','The atlas combines files from many localities to read local maize knowledge at national scale: where it was documented, which practices persist in each region, which maizes are sown and how the national network is woven. Everything happens in this browser; no data goes to a server.'))}
-  ${consejo(T('Cada encuestador llena una localidad y la guarda en el Bloque 13 con «Guardar proyecto». Quien coordina el estudio reúne esos archivos y los agrega aquí, varios a la vez. El atlas se puede exportar como un solo archivo para compartirlo o seguir agregando.','Each surveyor fills in one locality and saves it in Block 13 with “Save project”. The study coordinator gathers those files and adds them here, several at once. The atlas can be exported as a single file to share it or keep adding.'),
+  ${consejo(T('Cada encuestador llena una localidad y la guarda en el Bloque 12 con «Guardar proyecto». Quien coordina el estudio reúne esos archivos y los agrega aquí, varios a la vez. El atlas se puede exportar como un solo archivo para compartirlo o seguir agregando.','Each surveyor fills in one locality and saves it in Block 12 with “Save project”. The study coordinator gathers those files and adds them here, several at once. The atlas can be exported as a single file to share it or keep adding.'),
     T('Frecuencia de una práctica: f = localidades que respondieron «sí» ÷ localidades que respondieron (sí o no); lo no respondido no entra al denominador. Red nacional: peso de un vínculo = fracción de localidades cuya red (sin PM) lo contiene. Los índices regionales son medias simples de los valores de cada localidad.','Practice frequency: f = localities answering “yes” ÷ localities answering (yes or no); unanswered items stay out of the denominator. National network: link weight = share of localities whose network (without PM) contains it. Regional indices are simple means of each locality’s values.'))}
   <div class="card no-print"><div class="row" style="gap:8px;flex-wrap:wrap">
     <button class="btn" id="aArch">＋ ${T('Agregar archivos de localidades','Add locality files')}</button><input type="file" id="aFile" accept=".json,application/json" multiple hidden>

@@ -10,26 +10,33 @@
 
 Está hecha para productores y para científicos, en español y en inglés.
 
-## Qué contiene (versión 0.2.0)
+## Qué contiene (versión 0.3.0)
 
 | Bloque | Contenido |
 |---|---|
 | 1 · Maíz | Nativo o criollo, con las 64 razas de México en siete grupos (CONABIO, 2020; Sánchez et al., 2000), o mejorado o híbrido; sistema (milpa, MIAF, monocultivo, asociado, rotación, agroforestal, traspatio, forrajero o propio) y unidad de producción |
 | 2 · Región | Mapa real de México; estado, municipio y localidad (2,478 municipios y 54,357 localidades del INEGI con altitud y coordenadas) |
-| 3 · Requerimientos | Las cinco reglas básicas (5B) y los requerimientos innovados en la localidad |
-| 4 · Manejo | Cuestionario base de 38 pasos y 85 actividades: la localidad responde cuáles practica (sí o no), pone sus fechas y agrega sus innovaciones |
-| 5 · Regeneración | Ocho perillas 0–4 con valores sugeridos que se confirman; índice de regeneración, línea base y materia orgánica |
-| 6 · Riesgos | 19 amenazas con perillas de probabilidad, impacto y control; matriz 5 × 5, capacidad adaptativa e índice de riesgo |
-| 7 · Elementos | 63 elementos en 10 categorías y los propios de la localidad |
-| 8 · Precio y valor | Precio por unidad y por hectárea; valor económico, de uso, cultural y ecológico |
-| 9 · Formulación | Modelo del sistema complejo adaptativo y formulación matemática |
-| 10 · Tablero | Red ponderada, centralidades, comunidades (Louvain), correlaciones φ, calendario circular y cladograma del vecino más cercano |
-| 11 · Sostenibilidad | Compartimentos, índice de Sarandón (2002), 17 ODS y huella de carbono (IPCC) |
-| 12 · Prospectiva | Tres escenarios a 2, 5 y 10 años |
-| 13 · Informe | Resumen redactado, tablas, CSV, PDF y el archivo de la localidad (`.milpa.json`) |
-| 14 · Atlas nacional | Junta los archivos de muchas localidades: mapa, frecuencia de cada práctica a escala nacional y por región, maíces sembrados, innovaciones y red nacional del conocimiento del maíz |
+| 3 · Manejo | Cuestionario base de 38 pasos y 85 actividades: la localidad responde cuáles practica (sí o no), ordena sus pasos, marca los que no aplican, agrega pasos y actividades propios (con quién los propone y desde cuándo) y pone sus fechas |
+| 4 · Regeneración | Ocho perillas 0–4 con valores sugeridos que se confirman; índice de regeneración, línea base y materia orgánica |
+| 5 · Riesgos | 19 amenazas con perillas de probabilidad, impacto y control; matriz 5 × 5, capacidad adaptativa e índice de riesgo |
+| 6 · Elementos | 63 elementos en 10 categorías y los propios de la localidad |
+| 7 · Precio y valor | Precio por unidad y por hectárea; valor económico, de uso, cultural y ecológico |
+| 8 · Formulación | Modelo del sistema complejo adaptativo y formulación matemática |
+| 9 · Tablero | Red ponderada, centralidades, comunidades (Louvain), correlaciones φ, calendario circular y cladograma del vecino más cercano |
+| 10 · Sostenibilidad | Compartimentos, índice de Sarandón (2002), 17 ODS y huella de carbono (IPCC) |
+| 11 · Prospectiva | Tres escenarios a 2, 5 y 10 años |
+| 12 · Informe | Resumen redactado, tablas, CSV, PDF y el archivo de la localidad (`.milpa.json`) |
+| 13 · Atlas nacional | Junta los archivos de muchas localidades: mapa, frecuencia de cada práctica a escala nacional y por región, maíces sembrados, innovaciones y red nacional del conocimiento del maíz |
 
 Además: **Validación** (caso publicado, motor de redes frente a NetworkX, cladograma frente a SciPy, huella de carbono y agregación del atlas) y **Teoría**.
+
+## Novedades de la versión 0.3.0
+
+- **Manejo flexible.** Los pasos se mueven sosteniéndolos desde la agarradera ⠿ (con el ratón o el dedo) o con ↑ ↓; se cambian de regla; se marcan «No aplica en mi localidad» (se pliegan en gris y sus actividades salen de la red, los índices y el avance); y se agregan pasos propios en el lugar del ciclo que elijas.
+- **Más actividades por paso.** Cada paso acepta todas las actividades que necesites, tradicionales o innovadas, con **quién la propone** (un actor o institución de la red, que queda elegido como elemento) y **desde cuándo** (año). Desde la actividad se crea un elemento nuevo con un botón visible antes de la lista. Las actividades se arrastran dentro del paso o a otro paso y conservan su respuesta y sus impactos.
+- **Sin el bloque de Requerimientos.** Los bloques se renumeran: Manejo es el 3, Formulación el 8 y el Atlas nacional el 13. Las innovaciones de la localidad quedan en el Manejo, como actividades propias.
+- El grupo de cosecha, poscosecha y balance se llama ahora **Buena cosecha y balance**.
+- Instructivos actualizados con las secciones del Manejo flexible y capturas nuevas.
 
 ## Novedades de la versión 0.2.0
 
@@ -49,7 +56,7 @@ La aplicación arranca en blanco. Para que nadie confunda un ejemplo con sus pro
 
 ## Estudio nacional sin servidor
 
-1. Cada encuestador llena una localidad y la guarda en el Bloque 13 con **Guardar proyecto** (`.milpa.json`).
+1. Cada encuestador llena una localidad y la guarda en el Bloque 12 con **Guardar proyecto** (`.milpa.json`).
 2. Quien coordina reúne los archivos y los agrega en el **Atlas nacional**, varios a la vez.
 3. El atlas se exporta como un solo archivo (`.atlas.json`) para compartirlo o seguir agregando, y en CSV de localidades y de prácticas.
 

@@ -1,0 +1,47 @@
+{
+ "productor": {
+  "es": {
+   "title": "Ratio Milpa: Instructivo del Productor (1.ª edición, versión 0.3.0)",
+   "description": "Instructivo en español para productores, técnicos y encuestadores de Ratio Milpa 0.3.0, aplicación libre para un estudio nacional del conocimiento local del maíz en México como sistema complejo adaptativo. Recorre los 13 bloques con el caso resuelto del maíz criollo de Calpan, Puebla (Díaz-José et al., 2026): el maíz (64 razas o mejorado), la localidad, el cuestionario base con manejo flexible, regeneración, riesgo, red y modelo 3D, sostenibilidad, prospectiva, informe y el atlas nacional que junta los archivos de muchas localidades sin servidor. Incluye guía de entrevista, hojas de campo imprimibles, problemas frecuentes y glosario. 1.ª edición, actualizada en noviembre de 2026. La versión en inglés (Producer Guide) es un registro aparte con su propio DOI."
+  },
+  "en": {
+   "title": "Ratio Milpa: Producer Guide (1st edition, version 0.3.0)",
+   "description": "English guide for farmers, technicians and survey staff using Ratio Milpa 0.3.0, a free app for a national study of local maize knowledge in Mexico as a complex adaptive system. It walks through the 13 blocks with the worked case of landrace maize in Calpan, Puebla (Díaz-José et al., 2026): the maize (64 races or improved), the locality, the baseline questionnaire with flexible management, regeneration, risk, network and 3D model, sustainability, outlook, report and the national atlas that combines many localities’ files without a server. It includes an interview guide, printable field sheets, troubleshooting and a glossary. 1st edition, updated November 2026. The Spanish version (Instructivo del Productor) is a separate record with its own DOI.",
+   "keywords": [
+    "Ratio Milpa",
+    "user guide",
+    "maize",
+    "landrace maize",
+    "local knowledge",
+    "complex adaptive systems",
+    "network analysis",
+    "national atlas",
+    "sustainability",
+    "Puebla",
+    "Mexico"
+   ]
+  }
+ },
+ "cientifico": {
+  "es": {
+   "title": "Ratio Milpa: Instructivo del Científico (1.ª edición, versión 0.3.0)",
+   "description": "Instructivo en español para investigación y docencia de Ratio Milpa 0.3.0: modelo de datos, red ponderada y su estadística, cladograma, modelo 3D e importancia de los nodos, índices de sostenibilidad, regeneración y riesgo, modelo de escenarios, agregación del atlas nacional (frecuencia de prácticas y red nacional), validación frente a NetworkX y SciPy, reproducibilidad y ejemplo resuelto. 1.ª edición, actualizada en noviembre de 2026. La versión en inglés (Scientist Guide) es un registro aparte con su propio DOI."
+  },
+  "en": {
+   "title": "Ratio Milpa: Scientist Guide (1st edition, version 0.3.0)",
+   "description": "English guide for research and teaching with Ratio Milpa 0.3.0: data model, weighted network and its statistics, cladogram, 3D model and node importance, sustainability, regeneration and risk indices, scenario model, national-atlas aggregation (practice frequencies and national network), validation against NetworkX and SciPy, reproducibility and a worked example. 1st edition, updated November 2026. The Spanish version (Instructivo del Científico) is a separate record with its own DOI.",
+   "keywords": [
+    "Ratio Milpa",
+    "scientist guide",
+    "maize",
+    "network analysis",
+    "cladogram",
+    "complex adaptive systems",
+    "sustainability indices",
+    "validation",
+    "reproducibility",
+    "Mexico"
+   ]
+  }
+ }
+}

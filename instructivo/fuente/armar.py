@@ -3,6 +3,8 @@ Uso:  python armar.py          → ../../instructivo-productor.html y ../../inst
 Las capturas se toman con capturar.py (Chrome sin interfaz) y se guardan en ../img/<id>-<idioma>.jpg.
 Los PDF se imprimen con pdf.py."""
 import json, os, re, subprocess, sys
+from enlaces_web import web   # enlaces públicos (no localhost) en el HTML y en los PDF
+APP_WEB = 'https://hectortecumshe-ai.github.io/RatioMilpa/'
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 RAIZ = os.path.abspath(os.path.join(AQUI, '..', '..'))
@@ -11,7 +13,7 @@ VERSION_APP = '0.3.0'
 EDICION = ('1.ª edición, actualizada', '1st edition, updated')
 FECHA = ('noviembre de 2026', 'November 2026')
 DOI_APP = '10.5281/zenodo.23432656'
-DOI_GUIA = {'productor': '10.5281/zenodo.23904210', 'cientifico': '10.5281/zenodo.23904211'}        # ← DOI propio de cada instructivo cuando Zenodo lo asigne
+DOI_GUIA = {'productor': '10.5281/zenodo.24048794', 'cientifico': '10.5281/zenodo.24048795'}        # ← DOI propio de cada instructivo cuando Zenodo lo asigne
 ISBN = {'productor': ('', ''), 'cientifico': ('', '')}  # ← (ISBN impreso o PDF ES, ISBN PDF EN) cuando el INDAUTOR los asigne
 CITA_AUT = ('Mojica-Zárate, H. T., y Díaz-José, O.', 'Mojica-Zárate, H. T., &amp; Díaz-José, O.')
 AUTORES = 'Héctor Tecumshé Mojica-Zárate · Oscar Díaz-José'
@@ -237,7 +239,7 @@ def productor():
     html = pagina('productor', cuerpo, t_es, t_en, 'Instructivo del Productor', 'Producer Guide', 'RatioMilpa-Instructivo-Productor.pdf', 'RatioMilpa-Producer-Guide.pdf',
                   {'leer': ['Para empezar', 'Getting started'], 'b1': ['Los trece bloques', 'The thirteen blocks'], 'documentar': ['Consulta', 'Reference']}, tp.GLOS,
                   'Instructivo del Productor de Ratio Milpa: documenta el conocimiento local del maíz de tu localidad y súmalo a un atlas nacional. · Ratio Milpa Producer Guide.')
-    open(os.path.join(RAIZ, 'instructivo-productor.html'), 'w', encoding='utf-8', newline='\n').write(html)
+    open(os.path.join(RAIZ, 'instructivo-productor.html'), 'w', encoding='utf-8', newline='\n').write(web(html, APP_WEB))
     print('instructivo-productor.html', round(len(html.encode('utf-8')) / 1024), 'KB')
 
 
@@ -251,7 +253,7 @@ def cientifico():
     html = pagina('cientifico', cuerpo, t_es, t_en, 'Instructivo del Científico', 'Scientist Guide', 'RatioMilpa-Instructivo-Cientifico.pdf', 'RatioMilpa-Scientist-Guide.pdf',
                   {'leer': ['Preliminares', 'Front matter'], 'datos': ['Método', 'Method'], 'validacion': ['Evidencia y uso', 'Evidence and use']}, tc.GLOS,
                   'Instructivo del Científico de Ratio Milpa: modelo, ecuaciones, validación y reproducibilidad. · Ratio Milpa Scientist Guide.')
-    open(os.path.join(RAIZ, 'instructivo-cientifico.html'), 'w', encoding='utf-8', newline='\n').write(html)
+    open(os.path.join(RAIZ, 'instructivo-cientifico.html'), 'w', encoding='utf-8', newline='\n').write(web(html, APP_WEB))
     print('instructivo-cientifico.html', round(len(html.encode('utf-8')) / 1024), 'KB')
 
 

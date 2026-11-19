@@ -10,7 +10,7 @@
 
 Está hecha para productores y para científicos, en español y en inglés.
 
-## Qué contiene (versión 0.3.0)
+## Qué contiene (versión 0.4.0)
 
 | Bloque | Contenido |
 |---|---|
@@ -29,6 +29,12 @@ Está hecha para productores y para científicos, en español y en inglés.
 | 13 · Atlas nacional | Junta los archivos de muchas localidades: mapa, frecuencia de cada práctica a escala nacional y por región, maíces sembrados, innovaciones y red nacional del conocimiento del maíz |
 
 Además: **Validación** (caso publicado, motor de redes frente a NetworkX, cladograma frente a SciPy, huella de carbono y agregación del atlas) y **Teoría**.
+
+## Novedades de la versión 0.4.0
+
+- **Nuevo bloque 6 · Resiliencia.** Los 13 indicadores de comportamiento de la resiliencia del agroecosistema (Cabell y Oelofse, 2012) en perillas 0–4 y el riesgo frente a un evento climático, Riesgo = Vulnerabilidad × Amenaza / Capacidad de respuesta (Nicholls y Altieri, 2013, en Altieri et al., 2015). Los bloques siguientes se renumeran.
+- **Mis entrevistas y Enviar al administrador.** Cada encuestador guarda en su teléfono todas las entrevistas que haga, aunque no haya internet; una entrevista nueva no borra las anteriores. Cada una lleva encuestador, código del entrevistado y consentimiento informado. Con «Enviar al administrador» las elegidas salen en un solo archivo por WhatsApp o correo (menú de compartir del teléfono); lo no enviado queda pendiente y la app lo recuerda. El administrador recibe los archivos, descarga una tabla consolidada (CSV) para su análisis colectivo o las pasa al Atlas nacional.
+- **Funciona sin conexión.** Después de abrirla una vez con internet, la app se abre en el teléfono sin señal.
 
 ## Novedades de la versión 0.3.0
 
